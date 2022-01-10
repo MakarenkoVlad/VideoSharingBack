@@ -1,3 +1,5 @@
+package vlad.makarenko
+
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*

@@ -9,6 +9,11 @@ plugins {
 
 group = "com.videosharing"
 version = "0.0.1"
+
+application {
+    mainClass.set("com.example.ApplicationKt")
+}
+
 application {
     mainClass.set("com.videosharing.ApplicationKt")
 }

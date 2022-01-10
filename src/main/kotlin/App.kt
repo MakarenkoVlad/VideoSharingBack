@@ -4,12 +4,12 @@ import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 
-fun main(args: Array<String>) = EngineMain.main(args)
-
-fun Application.module() {
-    routing {
-        get {
-            call.respond("Hello wrld!")
+fun main() {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
+        routing {
+            get {
+               call.respond("Hello wrld!")
+            }
         }
-    }
+    }.start(wait = true)
 }

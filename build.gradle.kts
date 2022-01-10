@@ -13,6 +13,10 @@ application {
     mainClass.set("com.videosharing.ApplicationKt")
 }
 
+tasks.create("stage") {
+    dependsOn("installDist")
+}
+
 repositories {
     mavenCentral()
 }

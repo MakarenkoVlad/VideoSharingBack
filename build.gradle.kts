@@ -11,7 +11,7 @@ group = "com.videosharing"
 version = "0.0.1"
 
 application {
-    mainClass.set("App.kt")
+    mainClass.set("vlad.makarenko.App.kt")
 }
 
 tasks.create("stage") {
